@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="final.css">
+    <style>
+         body {
+        
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background:url('img/bg3.jpg');
+        background-size: 1520px 500px;
+        background-position-x: right ;
+        background-repeat: no-repeat;
+        background-color:black;
+        
+         }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 130px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        line-height: 10px;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 50%;
+        margin: 29px auto;
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 43px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 30px 23px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+
+    .btn:hover {
+        background-color: rgb(31, 30, 30);
+    }
+    .box:hover{background-color: rgb(92, 51, 51)
+
+    }
+    .container {
+        border: 2px solid white;
+        margin: 100px 350px;
+        padding: 60px;
+        width: 28%;
+        border-radius: 28px;
+        font-size: 12px;
+    }
+    #services-container{
+        margin-top: 0%
+
+    }
+    #services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #000000;
+    margin-bottom: 100px;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+    color: white
+
+} 
+#client-section{ 
+    position: relative;
+}
+
+#client-section::before{
+ content: "";
+ position: absolute;
+ background: url('../bg.jpg');
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.3;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 124px;
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="https://previews.123rf.com/images/atrians/atrians2003/atrians200300034/143396909-gym-logo.jpg" alt="">
+            <div>Jashn Fitness</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="final.html" class="active" onclick="back">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="formgym.html" >Membership</a></li>
+                <li><a href="#" onclick="alert('Please call us at 8299834390')">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn" id="c" onclick="change_text()" ondblclick="change_text3()">Call Us Now</button>
+            <button class="btn" id="e" onclick="change_text1()" ondblclick="change_text2()">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Lucknow now</h1>
+        <h2>My body is under construction, I am the architect of my own destiny.</h2>
+        </div>
+        <section id="services-container">
+            <h1 class="primarycenter">Our Services</h1>
+            <div id="services">
+                <div class="box">
+                    <img src="https://images.unsplash.com/photo-1470468969717-61d5d54fd036?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fHJ1bm5pbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+                    <h2 class="h-secondary center">CARDIO</h2>
+                    <p class="center">Cardio is defined as any type of exercise that gets your heart rate up and keeps it up for a prolonged period of time. Your respiratory system will start working harder as you begin to breathe faster and more deeply. Your blood vessels will expand to bring more oxygen to your muscles, and your body will release natural painkillers (endorphins).</p>
+                </div>
+                <div class="box">
+                    <img src="https://images.unsplash.com/photo-1529516548873-9ce57c8f155e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cG93ZXJsaWZ0aW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+                    <h2 class="h-secondary center">STRENGTH</h2>
+                    <p class="center">Strength training, also called weight training or resistance training, is an important part of any fitness routine. It helps make you stronger and also builds muscle endurance. With strength training, you move your body against some type of resistance, such as: your body weight. free weights, like dumbbells or barbells..</p>
+                </div>
+                <div class="box">
+                    <img src="https://images.unsplash.com/photo-1524594152303-9fd13543fe6e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWVyb2JpY3N8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+                    <h2 class="h-secondary center">AEROBICS</h2>
+                    <p class="center">Aerobic training increases the rate at which oxygen inhaled is passed on from the lungs and heart to the bloodstream to be used by the muscles. Aerobically fit athletes can exercise longer and harder before feeling tired. During exercise they have a slower heart rate, slower breathing rate, less muscle fatigue, and more energy..</p>
+                </div>
+            </div>
+        </section>
+        <section id="client-section">
+            <h1 class="h-primary center">Our Clients</h1>
+            <div id="clients">
+                <div class="client-item">
+                    <img src="https://sportsgeeks.net/wp-content/uploads/2020/10/Indian-Bodybuilders-800x620.jpg" alt="Our Client">
+                </div>
+                <div class="client-item">
+                    <img src="https://wallpaperaccess.com/full/2322806.jpg" alt="Our Client">
+                </div>
+              
+                <div class="client-item">
+                    <img src="https://filmfare.wwmindia.com/content/2021/apr/sonusood11619589988.jpg" alt="Our Client">
+                </div>
+                <div class="client-item">
+                    <img src="https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2020/03/08/Pictures/_73700afc-6131-11ea-bcc0-e4d0c7a68e9a.jpg" alt="Our Client">
+                </div>
+            </div>
+    
+        </section>
+       
+<script>
+    function change_text(){
+    document.getElementById("c").innerHTML = "8299834390";
+}
+function change_text1(){
+    document.getElementById("e").innerHTML = "gym@gmail.gy";
+}
+function change_text2(){
+    document.getElementById("e").innerHTML = "Email Us";
+}
+function change_text3(){
+    document.getElementById("c").innerHTML = "Call us";
+}
+</script>
+
+
+    
+</body>
+</html>

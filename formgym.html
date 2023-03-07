@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    
+    
+    <title>Document</title>
+    <style>
+         body {
+        
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background:url('img/bg3.jpg');
+        background-size: 1550px 720px;
+        background-position-x: right ;
+        background-repeat: no-repeat;
+        background-color:black;
+        
+         }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 130px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        line-height: 10px;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 50%;
+        margin: 29px auto;
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 43px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 30px 23px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(31, 30, 30);
+    }
+    .form {
+        margin: 150px 600px;
+    }
+    .heading{
+        margin: 100px 500px;
+    }
+    
+    .form-group input {
+        
+        text-align: center;
+        
+        width: 300px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px ;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+    
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="https://previews.123rf.com/images/atrians/atrians2003/atrians200300034/143396909-gym-logo.jpg" alt="">
+            <div>Jashn Fitness</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="final.html" >Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#"class="active">Membership</a></li>
+                <li><a href="#"onclick="alert('Please call us at 8299834390')">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn" id="c" onclick="change_text()" onclick="change_text3()">Call Us Now</button>
+            <button class="btn" id="e" onclick="change_text1()" hover="change_text2()">Email Us</button>
+        </div>
+    </header>
+    <h1 class="heading">MEMBERSHIP FORM </h1>
+    
+      
+
+
+    
+        
+        
+
+       
+      
+    <form action="noaction.php" >
+       
+        <div class="form-group" id="name">
+            NAME:<input type="text" name="" placeholder="Enter your Name">
+        </div>
+        <div class="form-group">
+            AGE: <input type="text" name="" placeholder="Enter your Age">
+        </div>
+        <div class="form-group">
+          <span   class="form-group" >GENDER:  MALE <input type="radio" name="">
+                FEMALE<input type="radio" name="">
+        </span>
+        <div class="form-group">
+            ADDRESS:<input type="text" name="" placeholder="Enter your Locality">
+        </div>
+        <div class="form-group">
+            EMAIL:<input type="text" name="" placeholder="Enter your Email Id">
+        </div>
+        <div class="form-group">
+           MOBILE NUMBER: <input type="text" name="" placeholder="Enter your Phone Number">
+        </div>
+        <div class="form-group">DISABILITY: YES<input type="radio">
+            NO<input type="radio"></div>
+        <button class="btn">Submit</button>
+    </form>
+
+
+
+    </form>
+    
+    <script>
+        function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for(let i = 0; i <ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+function change_text(){
+    document.getElementById("c").innerHTML = "8299834390";
+}
+function change_text1(){
+    document.getElementById("e").innerHTML = "gym@gmail.gy";
+}
+function change_text2(){
+    document.getElementById("e").innerHTML = "Email Us";
+}
+function change_text3(){
+    document.getElementById("c").innerHTML = "Call us";
+}
+    </script>
+</body>
+</html>
